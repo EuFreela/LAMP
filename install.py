@@ -128,14 +128,14 @@ while loop:
     elif choice==11:
         Select.append(11)
         print 20 * (Colour.GREEN+"."+Colour.END),(Colour.GREEN+"HEROKU.."+Colour.END)
-        #os.system('snap install heroku --classic -y')
+        os.system('snap install heroku --classic -y')
         print "\n[ Aguarde ].."
         time.sleep(1)
     
     elif choice==12:
         Select.append(12)
         print 20 * (Colour.GREEN+"."+Colour.END),(Colour.GREEN+"HEROKU.."+Colour.END)
-        #os.system('apt-get install default-jre -y && apt-get install default-jdk -y')
+        os.system('apt-get install default-jre -y && apt-get install default-jdk -y')
         print "\n[ Aguarde ].."
         time.sleep(1)
     
