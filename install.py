@@ -44,7 +44,6 @@ def print_menu():
             if x == (i+1):                
                 strr = strr + (Colour.GREEN+" [OK]"+Colour.END)
         strr = strr + "\n"
-        Legend.co = str(i)
     
     print strr
     print 67 * "-"
