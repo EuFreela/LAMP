@@ -21,7 +21,7 @@ class Colour:
 class Legend:
 	title = "AMBIENTE DE DESENVOLVIMENTO WEB-LEGEND v1.0"
   
-Menu = ["UPDATE","UPGRADE","APACHE","MYSQL","PHP","PHPMYADMIN","NODEJS","WORKBANCH","VSCODE","COMPOSER","HEROKU","JRE","INSTALL FULL","SAIR(99)"]
+Menu = ["UPDATE","UPGRADE","APACHE","MYSQL","PHP","PHPMYADMIN","NODEJS","WORKBANCH","VSCODE","COMPOSER","HEROKU","JRE","INSTALL FULL","TEST SERVICES","SAIR(99)"]
 Select = []
 
 
@@ -53,7 +53,7 @@ loop=True
  
 while loop:          
     print_menu()    
-    choice = input("Escolha [1-13]: ")
+    choice = input("Escolha [1-14]: ")
  
     if choice==1:   
         Select.append(1)
@@ -147,10 +147,16 @@ while loop:
         print "\n[ Aguarde ].."
         time.sleep(1)
 
+    elif choice==14:
+        Select.append(14)
+        print 20 * (Colour.GREEN+"."+Colour.END),(Colour.GREEN+"INSTALL FULL.."+Colour.END)
+        os.system('sh test.sh')
+        print "\n[ Aguarde ].."
+        time.sleep(1)
+
     elif choice==99:
         loop=False
         
     else:
         raw_input((Colour.RED+"Opcao errada. Escolha outra ou saia do sistema digitando 99.."+Colour.END))
-
 
