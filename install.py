@@ -159,3 +159,4 @@ while loop:
     else:
         raw_input((Colour.RED+"Opcao errada. Escolha outra ou saia do sistema digitando 99.."+Colour.END))
 
+
