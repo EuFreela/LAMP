@@ -107,7 +107,7 @@ while loop:
     elif choice==8:
         Select.append(8)
         print 20 * (Colour.GREEN+"."+Colour.END),(Colour.GREEN+"WORKBANCH.."+Colour.END)
-        os.system('apt install mysql-workbench -y')
+        os.system('apt install mysql-workbench-community -y')
         print "\n[ Aguarde ].."
         time.sleep(1)
     
